@@ -3,16 +3,16 @@ import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
 import { ServiceCard } from "@/components/ServiceCard";
 
-const heroImg = "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1600&q=80";
-const aboutImg = "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1600&q=80";
-const galleryImg = "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=1600&q=80";
+const heroImg = "https://images.unsplash.com/photo-1676210133055-eab6ef033ce3?auto=format&fit=crop&w=1600&q=80";
+const aboutImg = "https://images.unsplash.com/photo-1749532125405-70950966b0e5?auto=format&fit=crop&w=1600&q=80";
+const galleryImg = "https://images.unsplash.com/photo-1676210134188-4c05dd172f89?auto=format&fit=crop&w=1600&q=80";
 
 const services = [
-  { image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80", alt: "Modern bathroom installation", title: "Bathroom installs", desc: "Full refits, showers, and tiling coordination with trusted local trades." },
-  { image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=600&q=80", alt: "Boiler and heating system", title: "Boilers & heating", desc: "Servicing, repairs, and replacements — landlord certificates available." },
-  { image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80", alt: "Plumber responding to a leak", title: "Emergency leaks", desc: "Burst pipes and urgent call-outs across Cranleigh and surrounding villages." },
-  { image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80", alt: "Rental property plumbing work", title: "Landlord work", desc: "Reliable turnaround for agents and rental portfolios." },
-  { image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&q=80", alt: "General plumbing maintenance", title: "General plumbing", desc: "Taps, cylinders, outside taps, and routine maintenance." },
+  { image: "https://images.unsplash.com/photo-1749532125405-70950966b0e5?auto=format&fit=crop&w=600&q=80", alt: "Plumber installing bathroom plumbing", title: "Bathroom installs", desc: "Full refits, showers, and tiling coordination with trusted local trades." },
+  { image: "https://images.unsplash.com/photo-1676210134190-3f2c0d5cf58d?auto=format&fit=crop&w=600&q=80", alt: "Plumber servicing a water heater", title: "Boilers & heating", desc: "Servicing, repairs, and replacements — landlord certificates available." },
+  { image: "https://images.unsplash.com/photo-1676210134050-6f12c6898395?auto=format&fit=crop&w=600&q=80", alt: "Plumber on an emergency toilet repair", title: "Emergency leaks", desc: "Burst pipes and urgent call-outs across Cranleigh and surrounding villages." },
+  { image: "https://images.unsplash.com/photo-1676210134188-4c05dd172f89?auto=format&fit=crop&w=600&q=80", alt: "Plumber working on pipes in a rental property", title: "Landlord work", desc: "Reliable turnaround for agents and rental portfolios." },
+  { image: "https://images.unsplash.com/photo-1676210133055-eab6ef033ce3?auto=format&fit=crop&w=600&q=80", alt: "Plumber working under a kitchen sink", title: "General plumbing", desc: "Taps, cylinders, outside taps, and routine maintenance." },
 ];
 
 const reviews = [
@@ -68,7 +68,7 @@ export default function Page() {
       <section className="section-about">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-6 py-14 lg:grid-cols-2">
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-            <Image src={aboutImg} alt="Bathroom plumbing installation" fill className="object-cover" sizes="(min-width: 1024px) 50vw, 100vw" />
+            <Image src={aboutImg} alt="Plumber repairing bathroom plumbing" fill className="object-cover" sizes="(min-width: 1024px) 50vw, 100vw" />
           </div>
           <div>
             <h2 className="text-2xl font-bold text-[var(--navy)]">Why homeowners choose Tudor Plumbing</h2>
@@ -87,7 +87,7 @@ export default function Page() {
 
       <CtaBand
         image={galleryImg}
-        imageAlt="Plumbing tools and fittings"
+        imageAlt="Plumber at work on a bathroom repair"
         title="Need a plumber today?"
         body="Call for emergencies or send a message for bathroom quotes and boiler work. Demo site — confirm live availability with Tudor Plumbing."
         primaryHref="/contact"
@@ -113,10 +113,10 @@ export default function Page() {
         <h2 className="text-2xl font-bold text-[var(--navy)]">Recent work</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
           <div className="relative aspect-[16/10] overflow-hidden rounded-xl">
-            <Image src={galleryImg} alt="Completed plumbing job" fill className="object-cover" sizes="(min-width: 640px) 50vw, 100vw" />
+            <Image src={galleryImg} alt="Plumber working on pipes in a wall" fill className="object-cover" sizes="(min-width: 640px) 50vw, 100vw" />
           </div>
           <div className="relative aspect-[16/10] overflow-hidden rounded-xl">
-            <Image src={aboutImg} alt="Boiler and heating work" fill className="object-cover" sizes="(min-width: 640px) 50vw, 100vw" />
+            <Image src={aboutImg} alt="Plumber installing bathroom plumbing" fill className="object-cover" sizes="(min-width: 640px) 50vw, 100vw" />
           </div>
         </div>
       </section>
@@ -124,7 +124,7 @@ export default function Page() {
       <CtaBand
         reverse
         image={heroImg}
-        imageAlt="Tudor Plumbing Cranleigh"
+        imageAlt="Plumber working under a kitchen sink"
         title="Book Carl for your next job"
         body="66 Taylors Crescent, Cranleigh GU6 7EP. Saturday mornings available for smaller jobs and quotes."
         primaryHref="tel:07415381749"

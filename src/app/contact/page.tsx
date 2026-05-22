@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
 
 const contactHeroImg =
-  "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80";
+  "https://images.unsplash.com/photo-1676210133055-eab6ef033ce3?auto=format&fit=crop&w=1200&q=80";
 
 export default function ContactPage() {
   return (
@@ -12,7 +12,7 @@ export default function ContactPage() {
         <div className="relative min-h-[min(50vw,28rem)] lg:min-h-0 lg:h-full">
           <Image
             src={contactHeroImg}
-            alt="Plumber working on domestic plumbing and heating"
+            alt="Plumber working on pipes under a kitchen cabinet"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"
